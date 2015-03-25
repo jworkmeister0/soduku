@@ -1,11 +1,12 @@
-(define (fac n)
-	(if (zero? n)
-	1
-	(* n (fac (- n 1)))
-	)
-)
+;; Soduku: the sudoku solver
+;; The name was intentional
 
-(write (fac 4))
+;; File input here!
+(input-port? (open-input-file "puzzle.txt"))
+
+(write "everything works so far")
 (newline)
-(write "jack is awesome")
-(newline)
+(define tableSize 9)
+(define boxSize 3)
+
+
