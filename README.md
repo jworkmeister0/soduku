@@ -1,15 +1,7 @@
-# soduku
+Soduku: a sudoku solver
 
-The story so far:
+To run this, you'll need a LISP interperter. The easiest way to achieve this is by using lispbox. It can be found at https://common-lisp.net/project/lispbox/.
 
-Everything's pretty much done with the exception of:
+Put the solver.lisp file and an unsolved puzzle in the same dir as lispbox. Once lispbox is started run (load "solver.lisp"). The program will output the unsolved puzzle and a solved version once the program is done working.
 
-	-nice printing (of both unsolved and solved puzzle)
-
-	-testing (i've only tested maybe 2 puzzles)
-
-	-Solving empty puzzles. Theres some really strange behavior when you feed the program an empty puzzle.
-
-	-Maybe find a way for the program to solve multiple puzzles 
-
-ALSO, sorry about the awful whitespace in the code. It looked fine on my machine. I don't know why it is so widely formatted on github
+Puzzle files should be space-separated. Empty values are represented with 0's.
